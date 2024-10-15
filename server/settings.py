@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ak@24-#!-ox7&6_x^rr)7-vhj0k@!*@0^4u8w&l^7ky6&z85c6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -209,10 +209,10 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # or the origin of your frontend app
-    "https://main--authdjangoreact.netlify.app"
+    "https://warehouse16.netlify.app"
 ]
 
-RESET_PASSWORD_VERIFICATION_URL = 'https://main--authdjangoreact.netlify.app/custom-reset-password/{token}/'
+RESET_PASSWORD_VERIFICATION_URL = 'https://warehouse16.netlify.app/custom-reset-password/{token}/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_PORT = 587
